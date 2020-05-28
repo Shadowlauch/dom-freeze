@@ -1,29 +1,71 @@
 # Chrome Extension TypeScript Starter
 
-Chrome Extension, TypeScript and VS Code
-without webpack.
+[![Build Status](https://travis-ci.org/chibat/chrome-extension-typescript-starter.svg?branch=master)](https://travis-ci.org/chibat/chrome-extension-typescript-starter)
 
-## project structure
+Chrome Extension, TypeScript and Visual Studio Code
 
-* src: TypeScript source files
-* dist/js: Generated JavaScript files
+## Prerequisites
+
+* [node + npm](https://nodejs.org/) (Current Version)
+
+## Option
+
+* [Visual Studio Code](https://code.visualstudio.com/)
+
+## Includes the following
+
+* TypeScript
+* Webpack
+* Moment.js
+* jQuery
+* Jest
+* Example Code
+    * Chrome Storage
+    * Options Version 2
+    * content script
+    * count up badge number
+    * background
+
+## Project Structure
+
+* src/typescript: TypeScript source files
+* src/assets: static files
 * dist: Chrome Extension directory
+* dist/js: Generated JavaScript files
 
-## 1. npm install
+## Setup
 
 ```
 npm install
 ```
 
-## 2. import as VS Code project
+## Import as Visual Studio Code project
 
 ...
 
-## 3. build by watch mode
+## Build
 
-type `Ctrl + B`
+```
+npm run build
+```
 
-## 4. read extension to chrome
+## Build in watch mode
 
-...
+### terminal
 
+```
+npm run watch
+```
+
+### Visual Studio Code
+
+Run watch mode.
+
+type `Ctrl + Shift + B`
+
+## Load extension to chrome
+
+Load `dist` directory
+
+## Test
+`npx jest` or `npm run test`

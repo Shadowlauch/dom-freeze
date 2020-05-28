@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+
+  "name": "Freeze DOM",
+  "description": "Freeze (debug) DOM on shortcut.",
+  "version": "1.0",
+
+  "background": {
+    "scripts": ["js/background.js"]
+  },
+
+  "commands": {
+      "freeze-dom": {
+        "suggested_key": {
+          "default": "Alt+S",
+          "mac": "Command+S"
+        },
+        "description": "Freeze DOM"
+      }
+    },
+
+  "permissions": [
+    "storage",
+    "<all_urls>",
+    "tabs"
+  ]
+}
