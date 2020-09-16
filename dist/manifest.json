@@ -1,16 +1,27 @@
 {
   "manifest_version": 2,
 
-  "name": "Chrome Extension TypeScript Starter",
-  "description": "Chrome Extension, TypeScript, Visual Studio Code",
+  "name": "Freeze DOM",
+  "description": "Freeze (debug) DOM on shortcut.",
   "version": "1.0",
 
-  "browser_action": {
-    "default_icon": "icon.png",
-    "default_popup": "popup.html"
+  "background": {
+    "scripts": ["js/background.js"]
   },
+
+  "commands": {
+      "freeze-dom": {
+        "suggested_key": {
+          "default": "Alt+S",
+          "mac": "Command+S"
+        },
+        "description": "Freeze DOM"
+      }
+    },
+
   "permissions": [
-    "activeTab",
-    "https://ajax.googleapis.com/"
+    "storage",
+    "<all_urls>",
+    "tabs"
   ]
 }
